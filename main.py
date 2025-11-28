@@ -128,14 +128,14 @@ def tts_handler(message):
         path = os.path.join(tmp_dir, fname)
         write_wav(path, pcm)
         with open(path, "rb") as audio_file:
-            bot.send_audio(chat_id, audio_file, caption=f"Voice: {voice}")
+            bot.send_audio(chat_id, audio_file, caption=f"Your Voice: {voice} 😜")
         try:
             os.remove(path)
         except Exception:
             pass
     except Exception as e:
-        if "too many requests try next day waqtigan camal 😜" in str(e):
-            bot.send_message(chat_id, "error too many requests try next day waqtigan camal 😜")
+        if "too many requests try it next day 😪" in str(e):
+            bot.send_message(chat_id, "too many requests try it next day 😪")
         else:
             bot.send_message(chat_id, f"Error: {e}")
 
