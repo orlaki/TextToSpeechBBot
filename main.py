@@ -219,7 +219,7 @@ def tts_handler(message):
         return
     if not ensure_joined(user_id, chat_id):
         return
-    voice = user_voice.get(user_id, "Kore")
+    voice = user_voice.get(user_id, "Leda")
     try:
         bot.send_chat_action(chat_id, "upload_audio")
         pcm = generate_audio_pcm_with_key_rotation(text, voice)
