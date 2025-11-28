@@ -20,7 +20,7 @@ if not WEBHOOK_BASE:
 PORT = int(os.environ.get("PORT", "8080"))
 REQUIRED_CHANNEL = os.environ.get("REQUIRED_CHANNEL", "")
 USER_SUCCESS_PATH = "user_success.json"
-USER_FREE_USES = int(os.environ.get("USER_FREE_USES", "3"))
+USER_FREE_USES = int(os.environ.get("USER_FREE_USES", "1"))
 
 env_keys = os.environ.get("GOOGLE_API_KEYS")
 if env_keys:
