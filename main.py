@@ -115,7 +115,7 @@ def handle_text(message):
             bot.send_message(message.chat.id, "Tani ma aha lambarka saxda ah. Soo dir lambar u dhexeeya -100 ilaa +100 (0 waa caadi). Isku day mar kale:")
         return
 
-    text = message.text.replace(".", "،")
+    text = message.text.replace(".", ",")
     voice_name = CURRENT_VOICE_NAME
     filename = generate_tts_filename()
 
