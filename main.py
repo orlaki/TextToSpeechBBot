@@ -50,7 +50,7 @@ def set_voice(message):
         CURRENT_VOICE_LABEL = "Muuse 👨🏻‍🦱"
     bot.send_message(
         message.chat.id,
-        f"Hadda waxaa la doortay codka: {CURRENT_VOICE_LABEL}.",
+        f"okey Isoo dir qoraal ka",
         reply_to_message_id=message.message_id
     )
 
