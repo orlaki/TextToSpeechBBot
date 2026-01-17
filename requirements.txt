@@ -5,3 +5,4 @@ flask
 edge-tts
 asyncio
 edge-tts
+pymongo
